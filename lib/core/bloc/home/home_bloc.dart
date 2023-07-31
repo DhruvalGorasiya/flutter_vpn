@@ -17,7 +17,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
   FutureOr<void> homeInitialEvent(HomeInitialEvent event, Emitter<HomeState> emit) async {
     emit(HomeLoadingState());
     try {
-      String? response = await Repository.getVpnData();
+      await Repository.getVpnData();
       emit(HomeLoadingSuccessState());
     } catch (e) {
       log(e.toString());

@@ -110,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
             animate: true,
           ),
           Padding(
-            padding: EdgeInsets.only(bottom: 5, left: 5),
+            padding: EdgeInsets.only(bottom: 2, left: 5),
             child: CircleAvatar(
               backgroundColor: ColorConstant.primaryColor,
               radius: 30,
