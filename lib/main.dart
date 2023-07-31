@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
+import 'screens/home.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -16,7 +17,6 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'OpenVpn Demo',
       home: HomeScreen(),
     );
   }
